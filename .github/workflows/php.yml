@@ -26,6 +26,7 @@ jobs:
       with:
         php_extensions: sockets pdo_pgsql
         working_dir: ./academico-php
+        args: --ignore-platform-reqs
 
     - name: PHPCS
       run: composer run phpcs
