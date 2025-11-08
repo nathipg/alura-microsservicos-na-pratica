@@ -25,6 +25,7 @@ jobs:
       uses: php-actions/composer@v6
       with:
         php_extensions: sockets pdo_pgsql
+        working_dir: ./academico-php
 
     - name: PHPCS
       run: composer run phpcs
